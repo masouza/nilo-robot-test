@@ -1,0 +1,26 @@
+Casos de Teste:
+
+    Cenário 01: Procurando por um produto (positivo)
+        Dado que sou um cliente deslogado
+        Quando eu pesquisar um produto com nome "HTML" na pesquisa
+        E clicar no botão de pesquisa
+        Então o produto "Android Quick Start" deve ser retornado na pesquisa
+
+    Cenário 02: Procurando por um produto (negativo)
+        Dado que sou um cliente deslogado
+        Quando eu pesquisar um produto com nome "itemNãoExistente" na pesquisa
+        E clicar no botão de pesquisa
+        Então deve ser retornada a mensagem "itemNãoExistente"
+
+    Cenário 03: Listar Produtos
+        Dado que sou um cliente deslogado
+        Quando eu clicar no menu "Shop"
+        E passar o mouse por cima (hover) da categoria "HTML" no menu lateral esquerdo de categorias
+        E clicar na subcategoria "HTML"
+        Então deve ser exibido o produto "Thinking in HTML" dentro da categoria
+
+    Cenário 04: Adicionar cliente
+        Dado que sou um cliente deslogado
+        Quando eu clicar em "My account"
+        E me cadastrar em "Register" utilizando dados válidos
+        Então meu cadastro deve ser concluido com sucesso
