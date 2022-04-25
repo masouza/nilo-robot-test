@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220425 19:37:42.202" rpa="false" schemaversion="3">
+<suite id="s1" name="Pratice Tests" source="c:\Users\masou\Documents\Git\nilo-robot-test\web\pratice_tests.robot">
+<test id="s1-t1" name="Cenário 03: Listar Produtos" line="28">
+<kw name="Abrir Home Pratice" library="pratice_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL_home}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220425 19:37:42.365" level="INFO">Opening browser 'chrome' to base url 'http://practice.automationtesting.in/'.</msg>
+<status status="PASS" starttime="20220425 19:37:42.365" endtime="20220425 19:37:49.229"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220425 19:37:49.229" endtime="20220425 19:37:49.346"/>
+</kw>
+<status status="PASS" starttime="20220425 19:37:42.364" endtime="20220425 19:37:49.347"/>
+</kw>
+<kw name="Dado que estou na home" library="pratice_resources" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Que estou na home" library="pratice_resources">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Automation Practice Site</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220425 19:37:49.350" level="INFO">Page title is 'Automation Practice Site'.</msg>
+<status status="PASS" starttime="20220425 19:37:49.348" endtime="20220425 19:37:49.350"/>
+</kw>
+<status status="PASS" starttime="20220425 19:37:49.348" endtime="20220425 19:37:49.350"/>
+</kw>
+<status status="PASS" starttime="20220425 19:37:49.347" endtime="20220425 19:37:49.350"/>
+</kw>
+<status status="PASS" starttime="20220425 19:37:49.347" endtime="20220425 19:37:49.351"/>
+</kw>
+<kw name="Quando clicar em Shop" library="pratice_resources" sourcename="Quando ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="clicar em Shop" library="pratice_resources" sourcename="Clicar em ${string}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${content}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220425 19:37:49.352" endtime="20220425 19:37:49.369"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${string}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220425 19:37:49.371" level="INFO">Clicking link 'Shop'.</msg>
+<status status="PASS" starttime="20220425 19:37:49.370" endtime="20220425 19:37:49.417"/>
+</kw>
+<status status="PASS" starttime="20220425 19:37:49.351" endtime="20220425 19:37:49.417"/>
+</kw>
+<status status="PASS" starttime="20220425 19:37:49.351" endtime="20220425 19:37:49.417"/>
+</kw>
+<status status="PASS" starttime="20220425 19:37:49.351" endtime="20220425 19:37:49.418"/>
+</kw>
+<kw name="E clicar em HTML" library="pratice_resources" sourcename="E ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="clicar em HTML" library="pratice_resources" sourcename="Clicar em ${string}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${content}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220425 19:37:49.419" endtime="20220425 19:37:49.436"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${string}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220425 19:37:49.437" level="INFO">Clicking link 'HTML'.</msg>
+<msg timestamp="20220425 19:37:49.798" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220425 19:37:49.799" level="FAIL">Link with locator 'HTML' not found.</msg>
+<status status="FAIL" starttime="20220425 19:37:49.436" endtime="20220425 19:37:49.800"/>
+</kw>
+<status status="FAIL" starttime="20220425 19:37:49.419" endtime="20220425 19:37:49.800"/>
+</kw>
+<status status="FAIL" starttime="20220425 19:37:49.418" endtime="20220425 19:37:49.800"/>
+</kw>
+<status status="FAIL" starttime="20220425 19:37:49.418" endtime="20220425 19:37:49.801"/>
+</kw>
+<kw name="Então deve ser exibido o produto Thinking in HTML" library="pratice_resources" sourcename="Então ${keyword}">
+<status status="NOT RUN" starttime="20220425 19:37:49.801" endtime="20220425 19:37:49.801"/>
+</kw>
+<kw name="Fechar Navegador" library="pratice_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220425 19:37:49.802" endtime="20220425 19:37:52.213"/>
+</kw>
+<status status="PASS" starttime="20220425 19:37:49.802" endtime="20220425 19:37:52.213"/>
+</kw>
+<doc>Esse teste verifica o retorno da pesquisa por texto para entrada inválida</doc>
+<tag>listagem</tag>
+<status status="FAIL" starttime="20220425 19:37:42.364" endtime="20220425 19:37:52.214">Link with locator 'HTML' not found.</status>
+</test>
+<doc>Essa suit testa algumas funções do site "http://practice.automationtesting.in/"</doc>
+<status status="FAIL" starttime="20220425 19:37:42.205" endtime="20220425 19:37:52.215"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">listagem</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Pratice Tests">Pratice Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
