@@ -15,8 +15,10 @@
    
 4. Opcional: Instale o VSCode com o plugin "Robot Framework Language Server" da Robocorp. 
    Esse plugin permite fazer debug, executando individualmente os cenários.
+   
+5. Extraia o webdriver do chrome na pasta "scrips" dentro do diretório do Python. (https://chromedriver.chromium.org/downloads)
 
-5. No terminal aberto na mesma pasta que o arquivo "pratice_tests.robot" digite "robot pratice_tests.robot" para executar o teste completo.
+6. No terminal aberto na mesma pasta que o arquivo "pratice_tests.robot" digite "robot pratice_tests.robot" para executar o teste completo.
 
 
 
