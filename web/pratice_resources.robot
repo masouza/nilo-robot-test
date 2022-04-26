@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    FakerLibrary
 
 *** Variables ***
 ${URL_home}         http://practice.automationtesting.in/
@@ -61,3 +62,17 @@ Clicar em ${string}
 Deve ser exibido o produto ${string}
     Wait Until Element Is Visible      ${content}  
     Element Should Contain    ${content}    ${string}
+
+Cadastrar utilizando dados válidos
+    ${email}        Free Email
+    #Algumas aplicações tem dificuldade de executar o botão e dar o time paro JS do cadastro funcionar. Então dei o foco para poder identificar o elemento e depois dei 1ms
+    #para poder processar tudo.
+    Set Focus To Element    name:register
+    Sleep                   1
+    Input Text          //input[@name="email"]                    ${email}
+    Input Password      xpath=(//input[@name="password"])[2]      TesteNilo12@3
+    Click Element           name:register
+
+    
+Cadastro deve ser concluido com sucesso
+    Wait Until Element Is Visible    xpath=(//a[@href="http://practice.automationtesting.in/my-account/customer-logout/"])[2]
