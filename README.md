@@ -20,6 +20,7 @@
 
 
 
-##Observações
+## Observações
+
 O cenário 01 é um caso negativo, ele vai retornar como sucedido sempre que não achar o resultado na busca.
 O cenário 02 foi interpretado como "verifique se é retornado mensagem de item não existe", mas foi enviado um email no dia da execução do teste para confirmar isso. Talvez seja alterado se necessário.
